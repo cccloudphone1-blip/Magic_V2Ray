@@ -1,0 +1,17 @@
+Changes on `alpha` since it diverged from `main`:
+
+- Hoang2Ray: fallback to debug keystore in CI when signing secrets are absent (c026657)
+- Hoang2Ray: restore https updateJson in module.prop to satisfy CI Packaging check (d06c7ce)
+- Hoang2Ray: trigger CI build after enabling GitHub Actions (a56262c)
+- Hoang2Ray: skip welcome screen (root-first) and inject hoang2ray.js/css (f034f02)
+- Hoang2Ray: apply 4G-only, auto-hotspot, low-ping presets in hoang2ray.js (b0fea17)
+- Hoang2Ray: update broadcast target package to com.hoang2ray.app in xray.c (f6b9022)
+- Hoang2Ray: update SELF_PKG to com.hoang2ray.app in exclude.c (fd8bd59)
+- Hoang2Ray: add hoang2ray.js with quick actions bar and auto-update sub (77ac946)
+- Hoang2Ray: add hoang2ray.css for quick actions bar (69bce8a)
+- Hoang2Ray: rebrand strings.xml (vi) (46cdbd6)
+- Hoang2Ray: rebrand strings.xml (en) (53abfb2)
+- Hoang2Ray: update PKG in module/action.sh (a9fba58)
+- Hoang2Ray: use ${applicationId}.api for ExternalApiProvider authority (fb79112)
+- Hoang2Ray: change applicationId to com.hoang2ray.app (33ccaf2)
+- Hoang2Ray: update module.prop name and remove upstream updateJson (ca86db1)

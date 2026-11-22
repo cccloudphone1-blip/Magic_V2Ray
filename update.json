@@ -1,0 +1,10 @@
+{
+  "version": "x-alpha-build-c026657a",
+  "versionCode": 211,
+  "zipUrl": "https://raw.githubusercontent.com/cccloudphone1-blip/Magic_V2Ray/refs/heads/alpha-build/magic_v2ray-alpha-universal.apk",
+  "arch": {
+    "arm64-v8a": "https://raw.githubusercontent.com/cccloudphone1-blip/Magic_V2Ray/refs/heads/alpha-build/magic_v2ray-alpha-arm64-v8a.apk",
+    "x86_64": "https://raw.githubusercontent.com/cccloudphone1-blip/Magic_V2Ray/refs/heads/alpha-build/magic_v2ray-alpha-x86_64.apk"
+  },
+  "changelog": "https://raw.githubusercontent.com/cccloudphone1-blip/Magic_V2Ray/refs/heads/alpha-build/changelog.md"
+}

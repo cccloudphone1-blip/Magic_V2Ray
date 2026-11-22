@@ -1,0 +1,32 @@
+/* Hoang2Ray Quick Actions Bar */
+.quick-actions-bar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-bottom: 12px;
+}
+.quick-action-btn {
+    appearance: none;
+    border: 1px solid var(--md-outline-variant, rgba(128,128,128,0.28));
+    background: var(--md-surface-2, var(--md-surface-container, rgba(128,128,128,0.08)));
+    color: var(--md-on-surface, inherit);
+    border-radius: 12px;
+    padding: 10px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.08s ease, opacity 0.15s ease;
+}
+.quick-action-btn:active {
+    transform: scale(0.97);
+}
+.quick-action-primary {
+    background: var(--md-primary, #1a73e8);
+    color: var(--md-on-primary, #ffffff);
+    border-color: transparent;
+}
+.quick-action-danger {
+    color: var(--md-error, #ba1a1a);
+    border-color: color-mix(in srgb, var(--md-error, #ba1a1a) 35%, transparent);
+}

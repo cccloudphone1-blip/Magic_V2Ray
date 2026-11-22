@@ -26,10 +26,10 @@ static bool valid_pkg(const char *s)
     return true;
 }
 
-/* The Magic V2Ray app itself is always bypassed while Exclude apps is on, whether
+/* The Hoang2Ray app itself is always bypassed while Exclude apps is on, whether
  * or not the user listed it: its own traffic (UI, update checks, helper calls)
  * must never be looped through the tunnel it controls. */
-#define SELF_PKG "com.huskydg.magicv2ray"
+#define SELF_PKG "com.hoang2ray.app"
 
 /* Appends the entries of one list file: comments, CRs and blank lines removed. */
 static void read_file(const char *path, char ***v, int *n, bool *self)
@@ -251,7 +251,7 @@ static void monitor_main(int stop_fd)
 void apps_monitor_stop(void) { worker_stop(&g_mon); }
 
 /* Always runs while the engine does: besides keeping the Exclude apps rules current (only when that is on) it
- * has to notice the Magic V2Ray app's uid, which gets access to the proxy inbound. */
+ * has to notice the Hoang2Ray app's uid, which gets access to the proxy inbound. */
 void apps_monitor_start(void)
 {
     apps_monitor_stop();

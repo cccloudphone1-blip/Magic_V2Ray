@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Magic V2Ray</string>
+    <string name="app_name">Hoang2Ray</string>
     <string name="setup_checking_root">Checking root access…</string>
-    <string name="setup_checking_module">Checking the Magic V2Ray module…</string>
+    <string name="setup_checking_module">Checking the Hoang2Ray module…</string>
     <string name="setup_installing">Installing the module to /data/adb/modules/magic_v2ray…</string>
     <string name="setup_starting">Starting the service…</string>
-    <string name="err_no_root">Root access is required.\n\nGrant superuser permission to Magic V2Ray in Magisk, KernelSU or APatch, then tap Retry.</string>
+    <string name="err_no_root">Root access is required.\n\nGrant superuser permission to Hoang2Ray in Magisk, KernelSU or APatch, then tap Retry.</string>
     <string name="err_install">Could not install the module.</string>
     <string name="reboot_hint">Module updated. Reboot to run the new engine.</string>
     <string name="retry">Retry</string>
     <string name="exit">Exit</string>
-    <string name="tile_label">Magic V2Ray</string>
+    <string name="tile_label">Hoang2Ray</string>
     <string name="tile_on">On</string>
     <string name="tile_off">Off</string>
     <string name="tile_busy">Working…</string>
     <string name="tile_unavailable">Unavailable</string>
     <string name="use_nonroot">Use non-root mode (VpnService)</string>
-    <string name="welcome_title">Welcome to Magic V2Ray!</string>
-    <string name="welcome_subtitle">Magic V2Ray offers two ways to run the proxy. Pick the one that suits you:</string>
+    <string name="welcome_title">Welcome to Hoang2Ray!</string>
+    <string name="welcome_subtitle">Hoang2Ray offers two ways to run the proxy. Pick the one that suits you:</string>
     <string name="welcome_hint">You can switch mode at any time in the app settings.</string>
     <string name="mode_root_title">Root mode</string>
     <string name="mode_vpn_title">VPN mode</string>
@@ -28,7 +28,7 @@
     <string name="feat_background">Runs in the background</string>
     <string name="feat_compatible">Compatible</string>
     <string name="err_no_root_title">Root access required</string>
-    <string name="err_no_root_body">Grant superuser permission to Magic V2Ray in Magisk, KernelSU or APatch, then tap Retry.</string>
+    <string name="err_no_root_body">Grant superuser permission to Hoang2Ray in Magisk, KernelSU or APatch, then tap Retry.</string>
     <string name="err_install_title">Setup failed</string>
     <string name="vpn_channel">Proxy status</string>
     <string name="notif_title_on">Proxy is active</string>
@@ -58,7 +58,7 @@
     <string name="ext_unnamed">an unnamed connection</string>
     <string name="ext_ended">External connection ended</string>
     <string name="ext_no_session">No external connection is running</string>
-    <string name="ext_prompt_question">Allow %1$s to connect through Magic V2Ray?</string>
+    <string name="ext_prompt_question">Allow %1$s to connect through Hoang2Ray?</string>
     <string name="ext_prompt_always">Always allow</string>
     <string name="ext_prompt_once">Allow once</string>
     <string name="ext_prompt_deny">Deny</string>
@@ -84,5 +84,5 @@
     <string name="ext_ov_selected_node">Your selected node is kept</string>
     <string name="update_channel">App updates</string>
     <string name="update_notif_title">Update available</string>
-    <string name="update_notif_text">Magic V2Ray %1$s is available. Tap to view.</string>
+    <string name="update_notif_text">Hoang2Ray %1$s is available. Tap to view.</string>
 </resources>

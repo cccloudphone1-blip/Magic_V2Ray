@@ -59,7 +59,7 @@
         </activity>
 
         <!-- External control (connect / disconnect). A translucent dialog that appears right over the app that asked,
-             like Shizuku's permission prompt, instead of pulling Magic V2Ray to the front. -->
+             like Shizuku's permission prompt, instead of pulling Hoang2Ray to the front. -->
         <activity
             android:name=".ExternalPromptActivity"
             android:exported="true"
@@ -127,7 +127,7 @@
         <!-- Read-only info / state of the external API (see ExternalApiProvider). No permission: it holds no secrets. -->
         <provider
             android:name=".ExternalApiProvider"
-            android:authorities="com.huskydg.magicv2ray.api"
+            android:authorities="${applicationId}.api"
             android:exported="true" />
 
         <!-- "Turn off proxy" button of the status notification. -->

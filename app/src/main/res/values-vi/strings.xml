@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Magic V2Ray</string>
+    <string name="app_name">Hoang2Ray</string>
     <string name="setup_checking_root">Đang kiểm tra quyền root…</string>
-    <string name="setup_checking_module">Đang kiểm tra module Magic V2Ray…</string>
+    <string name="setup_checking_module">Đang kiểm tra module Hoang2Ray…</string>
     <string name="setup_installing">Đang cài module vào /data/adb/modules/magic_v2ray…</string>
     <string name="setup_starting">Đang khởi động dịch vụ…</string>
-    <string name="err_no_root">Cần quyền root.\n\nHãy cấp quyền superuser cho Magic V2Ray trong Magisk, KernelSU hoặc APatch rồi nhấn Thử lại.</string>
+    <string name="err_no_root">Cần quyền root.\n\nHãy cấp quyền superuser cho Hoang2Ray trong Magisk, KernelSU hoặc APatch rồi nhấn Thử lại.</string>
     <string name="err_install">Không cài được module.</string>
     <string name="reboot_hint">Module đã được cập nhật. Khởi động lại máy để chạy engine mới.</string>
     <string name="retry">Thử lại</string>
     <string name="exit">Thoát</string>
-    <string name="tile_label">Magic V2Ray</string>
+    <string name="tile_label">Hoang2Ray</string>
     <string name="tile_on">Bật</string>
     <string name="tile_off">Tắt</string>
     <string name="tile_busy">Đang xử lý…</string>
     <string name="tile_unavailable">Không khả dụng</string>
     <string name="use_nonroot">Dùng chế độ non-root (VpnService)</string>
-    <string name="welcome_title">Chào mừng đến với Magic V2Ray!</string>
-    <string name="welcome_subtitle">Magic V2Ray cung cấp hai phương pháp chạy proxy. Hãy chọn phương pháp phù hợp với bạn:</string>
+    <string name="welcome_title">Chào mừng đến với Hoang2Ray!</string>
+    <string name="welcome_subtitle">Hoang2Ray cung cấp hai phương pháp chạy proxy. Hãy chọn phương pháp phù hợp với bạn:</string>
     <string name="welcome_hint">Bạn có thể đổi chế độ bất cứ lúc nào trong phần cài đặt của ứng dụng.</string>
     <string name="mode_root_title">Chế độ root</string>
     <string name="mode_vpn_title">Chế độ VPN</string>
@@ -28,7 +28,7 @@
     <string name="feat_background">Chạy nền</string>
     <string name="feat_compatible">Tương thích</string>
     <string name="err_no_root_title">Cần quyền root</string>
-    <string name="err_no_root_body">Hãy cấp quyền superuser cho Magic V2Ray trong Magisk, KernelSU hoặc APatch rồi nhấn Thử lại.</string>
+    <string name="err_no_root_body">Hãy cấp quyền superuser cho Hoang2Ray trong Magisk, KernelSU hoặc APatch rồi nhấn Thử lại.</string>
     <string name="err_install_title">Cài đặt thất bại</string>
     <string name="vpn_channel">Trạng thái proxy</string>
     <string name="notif_title_on">Proxy đang hoạt động</string>
@@ -58,7 +58,7 @@
     <string name="ext_unnamed">một kết nối chưa đặt tên</string>
     <string name="ext_ended">Đã ngắt kết nối ngoài</string>
     <string name="ext_no_session">Không có kết nối ngoài nào đang chạy</string>
-    <string name="ext_prompt_question">Cho phép %1$s kết nối qua Magic V2Ray?</string>
+    <string name="ext_prompt_question">Cho phép %1$s kết nối qua Hoang2Ray?</string>
     <string name="ext_prompt_always">Cho phép mọi lúc</string>
     <string name="ext_prompt_once">Cho phép một lần</string>
     <string name="ext_prompt_deny">Từ chối</string>
@@ -84,5 +84,5 @@
     <string name="ext_ov_selected_node">Giữ nguyên node bạn đang chọn</string>
     <string name="update_channel">Cập nhật ứng dụng</string>
     <string name="update_notif_title">Có bản cập nhật mới</string>
-    <string name="update_notif_text">Magic V2Ray %1$s đã có. Nhấn để xem.</string>
+    <string name="update_notif_text">Hoang2Ray %1$s đã có. Nhấn để xem.</string>
 </resources>

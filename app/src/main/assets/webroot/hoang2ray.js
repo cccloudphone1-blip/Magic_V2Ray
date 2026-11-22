@@ -8,6 +8,32 @@
         h1.textContent = 'Hoang2Ray';
     }
 
+    // Apply Hoang2Ray default presets once on first launch:
+    // - networkMode = 2 (Mobile Data Only: 4G proxy, Wi-Fi direct)
+    // - allowTether = true (Auto Hotspot proxy)
+    // - mux = false (Low ping for gaming)
+    // - mtu = 1400 (Optimal for 4G + WS)
+    try {
+        if (!localStorage.getItem('h2r_init_done') && typeof advSettings === 'object') {
+            advSettings.networkMode = 2;
+            advSettings.allowTether = true;
+            advSettings.mux = false;
+            advSettings.mtu = 1400;
+            localStorage.setItem('h2r_init_done', '1');
+            if (typeof writeFileB64 === 'function' && typeof SETTINGS_FILE !== 'undefined' && typeof utoa === 'function') {
+                writeFileB64(SETTINGS_FILE, utoa(JSON.stringify(advSettings)));
+            }
+            const nmEl = document.getElementById('set-networkmode');
+            if (nmEl) nmEl.value = '2';
+            const mtuEl = document.getElementById('set-mtu');
+            if (mtuEl) mtuEl.value = '1400';
+            const muxEl = document.getElementById('set-mux');
+            if (muxEl) muxEl.checked = false;
+            const tetherEl = document.getElementById('set-allowtether');
+            if (tetherEl) tetherEl.checked = true;
+        }
+    } catch (e) {}
+
     // Extend i18n dictionary
     if (typeof i18n !== 'undefined') {
         const extraEn = {

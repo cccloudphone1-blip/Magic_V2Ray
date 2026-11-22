@@ -261,8 +261,7 @@ jobs:
             echo "$MV_KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/release.jks"
             echo "MV_KEYSTORE=$RUNNER_TEMP/release.jks" >> "$GITHUB_ENV"
           else
-            echo "::error::neither secret MV2R_KEYSTORE_ENV nor MV_KEYSTORE_BASE64 is set"
-            exit 1
+            echo "No release keystore secret set — building with Android debug key."
           fi
 
       # APKs only (build.sh checks each one doubles as a flashable module zip).

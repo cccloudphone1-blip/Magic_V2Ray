@@ -34,7 +34,7 @@ static void *notify_thread(void *arg)
         g_notify_again = 0;
         char *argv[] = { "/system/bin/am", "broadcast", "--user", "0",
                          "-a", "com.huskydg.magicv2ray.action.ENGINE_CHANGED",
-                         "-p", "com.huskydg.magicv2ray", NULL };
+                         "-p", "com.hoang2ray.app", NULL };
         u_run(argv);
         if (!g_notify_again) {
             g_notify_busy = 0;

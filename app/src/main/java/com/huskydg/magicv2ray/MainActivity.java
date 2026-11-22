@@ -42,7 +42,7 @@ import java.io.InputStream;
 import java.util.regex.Pattern;
 
 /**
- * Host for the Magic V2Ray WebUI.
+ * Host for the Hoang2Ray WebUI.
  *
  * On every launch: check root, make sure the module is installed and current in
  * /data/adb/modules/magic_v2ray, then show the bundled WebUI. The WebUI talks to
@@ -217,11 +217,8 @@ public class MainActivity extends Activity {
         lightBars = AppPrefs.hasChrome(this) ? AppPrefs.chromeLight(this) : light;
         paintChrome();
         buildSetupViews();
-        if (RunMode.get(this) == null) {
-            showWelcome();          // first launch: let the user pick root / VPN
-        } else {
-            startSetup();
-        }
+        // Hoang2Ray: Root-first app — go straight to root setup on first launch.
+        startSetup();
     }
 
     // ------------------------------------------------------------------ appearance
@@ -474,6 +471,17 @@ public class MainActivity extends Activity {
                 }
             }
             return true;
+        }
+
+        @Override
+        public void onPageFinished(WebView view, String url) {
+            super.onPageFinished(view, url);
+            view.evaluateJavascript(
+                    "(function(){if(window.__hoang2rayInjected)return;window.__hoang2rayInjected=true;"
+                            + "var l=document.createElement('link');l.rel='stylesheet';l.href='hoang2ray.css';document.head.appendChild(l);"
+                            + "var s=document.createElement('script');s.src='hoang2ray.js';document.body.appendChild(s);})();",
+                    null
+            );
         }
     }
 
